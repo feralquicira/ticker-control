@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lBx-2x-QIp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Iok-X5-ZMn">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -2038,6 +2038,7 @@
         <!--Event Details Controller-->
         <scene sceneID="3Ue-up-KhE">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqo-Sl-Vtk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="lBx-2x-QIp" customClass="EventDetailsController" customModule="Ticker_Fase1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mO4-jE-FaX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
@@ -2496,7 +2497,6 @@
                         <outlet property="scrollView" destination="bhl-8A-rXY" id="wZP-t1-9dg"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dqo-Sl-Vtk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6847" y="251"/>
         </scene>
@@ -2508,31 +2508,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbD-7a-W66">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AE1-O3-6BL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <connections>
-                                    <segue destination="RyJ-m4-jHe" kind="embed" id="5FP-W0-B94"/>
+                                    <segue destination="Zt1-A6-59y" kind="embed" id="H57-a0-tYY"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="m49-Jm-77Z" firstAttribute="bottom" secondItem="DbD-7a-W66" secondAttribute="bottom" id="8OY-l2-0X2"/>
-                            <constraint firstItem="m49-Jm-77Z" firstAttribute="trailing" secondItem="DbD-7a-W66" secondAttribute="trailing" id="Ipl-E5-4Kd"/>
-                            <constraint firstItem="DbD-7a-W66" firstAttribute="top" secondItem="sIt-Ti-RhE" secondAttribute="top" id="TSM-DB-705"/>
-                            <constraint firstItem="DbD-7a-W66" firstAttribute="leading" secondItem="m49-Jm-77Z" secondAttribute="leading" id="wXi-RX-foI"/>
+                            <constraint firstItem="m49-Jm-77Z" firstAttribute="bottom" secondItem="AE1-O3-6BL" secondAttribute="bottom" id="6tS-bl-4yU"/>
+                            <constraint firstItem="AE1-O3-6BL" firstAttribute="leading" secondItem="m49-Jm-77Z" secondAttribute="leading" id="Ewc-mi-3gg"/>
+                            <constraint firstItem="AE1-O3-6BL" firstAttribute="top" secondItem="sIt-Ti-RhE" secondAttribute="top" id="gGZ-IT-Hvt"/>
+                            <constraint firstItem="m49-Jm-77Z" firstAttribute="trailing" secondItem="AE1-O3-6BL" secondAttribute="trailing" id="wJP-cP-a7j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m49-Jm-77Z"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="DbD-7a-W66"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="DbD-7a-W66"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0y-Lk-nPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2600,7 +2590,7 @@
                                                 </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palacio de los Deportes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVY-28-vsM">
-                                                <rect key="frame" x="55" y="180" width="320.33333333333331" height="25.666666666666657"/>
+                                                <rect key="frame" x="55" y="180.33333333333334" width="320.33333333333331" height="25.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="20"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2610,7 +2600,7 @@
                                                 <color key="backgroundColor" red="0.17254901959999999" green="0.90980392160000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd/mm/aaaa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb8-3X-WQC">
-                                                <rect key="frame" x="55" y="220" width="320.33333333333331" height="25.666666666666657"/>
+                                                <rect key="frame" x="55" y="220.33333333333334" width="320.33333333333331" height="25.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="20"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2620,7 +2610,7 @@
                                                 <color key="backgroundColor" red="0.17254901959999999" green="0.90980392160000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$500 - 1100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMW-kB-DVS">
-                                                <rect key="frame" x="55" y="260" width="320.33333333333331" height="25.666666666666686"/>
+                                                <rect key="frame" x="55" y="260.33333333333331" width="320.33333333333331" height="25.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="20"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -3348,18 +3338,31 @@
             <point key="canvasLocation" x="3479" y="89"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="Imc-f9-yq8">
+        <scene sceneID="94p-ij-1pZ">
             <objects>
-                <viewController id="RyJ-m4-jHe" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4OM-Vd-cgf">
+                <viewController id="Zt1-A6-59y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pcZ-9I-s2r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7X-Y5-Sjj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.42352941179999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="oyT-aj-uBF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H7X-Y5-Sjj" firstAttribute="top" secondItem="pcZ-9I-s2r" secondAttribute="top" id="DGD-fE-PAI"/>
+                            <constraint firstItem="H7X-Y5-Sjj" firstAttribute="leading" secondItem="pcZ-9I-s2r" secondAttribute="leading" id="iFX-67-ytR"/>
+                            <constraint firstAttribute="trailing" secondItem="H7X-Y5-Sjj" secondAttribute="trailing" id="sAx-Vq-9nF"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ODP-zK-uhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eC9-vv-mav" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5170" y="818"/>
         </scene>
     </scenes>
     <resources>
