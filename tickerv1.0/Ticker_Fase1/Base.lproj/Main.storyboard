@@ -1416,9 +1416,6 @@
                                                                     <include reference="Iox-TG-Pxr"/>
                                                                 </mask>
                                                             </variation>
-                                                            <connections>
-                                                                <segue destination="lBx-2x-QIp" kind="presentation" id="bxC-YD-n4p"/>
-                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="0.42352941179999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -2501,7 +2498,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqo-Sl-Vtk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5208.8000000000002" y="256.4039408866995"/>
+            <point key="canvasLocation" x="6847" y="251"/>
+        </scene>
+        <!--Details Main Parent Controller-->
+        <scene sceneID="Mt2-Zx-Fxj">
+            <objects>
+                <viewController id="Iok-X5-ZMn" userLabel="Details Main Parent Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sIt-Ti-RhE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbD-7a-W66">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <connections>
+                                    <segue destination="RyJ-m4-jHe" kind="embed" id="5FP-W0-B94"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m49-Jm-77Z" firstAttribute="bottom" secondItem="DbD-7a-W66" secondAttribute="bottom" id="8OY-l2-0X2"/>
+                            <constraint firstItem="m49-Jm-77Z" firstAttribute="trailing" secondItem="DbD-7a-W66" secondAttribute="trailing" id="Ipl-E5-4Kd"/>
+                            <constraint firstItem="DbD-7a-W66" firstAttribute="top" secondItem="sIt-Ti-RhE" secondAttribute="top" id="TSM-DB-705"/>
+                            <constraint firstItem="DbD-7a-W66" firstAttribute="leading" secondItem="m49-Jm-77Z" secondAttribute="leading" id="wXi-RX-foI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m49-Jm-77Z"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="DbD-7a-W66"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="DbD-7a-W66"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v0y-Lk-nPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5170" y="49"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FiF-da-K4G">
@@ -2895,7 +2931,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYH-oc-ez7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6089" y="109"/>
+            <point key="canvasLocation" x="6062" y="109"/>
         </scene>
         <!--Filters Controller-->
         <scene sceneID="3Vw-mk-HnC">
@@ -3310,6 +3346,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Upo-ya-2aN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3479" y="89"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Imc-f9-yq8">
+            <objects>
+                <viewController id="RyJ-m4-jHe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4OM-Vd-cgf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODP-zK-uhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5170" y="818"/>
         </scene>
     </scenes>
     <resources>
