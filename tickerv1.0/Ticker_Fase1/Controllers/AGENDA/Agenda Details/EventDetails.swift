@@ -8,6 +8,8 @@
 
 import UIKit
 import Cosmos
+import GoogleMaps
+import GooglePlaces
 
 protocol changeConstraint {
     func moveUp(up:Bool)
@@ -19,6 +21,7 @@ class EventDetails: UIViewController,UICollectionViewDelegate, UICollectionViewD
     @IBOutlet weak var cosmosView: CosmosView!
     @IBOutlet weak var sinopsisTopConstrain: NSLayoutConstraint!
     @IBOutlet weak var headphonesimage: UIImageView!
+    @IBOutlet weak var mapView: GMSMapView!
     
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -35,13 +38,25 @@ class EventDetails: UIViewController,UICollectionViewDelegate, UICollectionViewD
         scrollView.delegate = self
         setupIcons(image_name: "headphones", image_view: headphonesimage, hexColor: 0x2CE8CC)
 
+        // Setup map view
+        let camera = GMSCameraPosition.camera(withLatitude: 37.36, longitude: -122.0, zoom: 14.0)
+        mapView.camera = camera
+        mapView.settings.scrollGestures = true
+        mapView.settings.zoomGestures = true
+        mapView.settings.tiltGestures = true
+        mapView.settings.rotateGestures = false
         
+        showMarker(position: camera.target)
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: - Google Maps
+    func showMarker(position: CLLocationCoordinate2D){
+        let marker = GMSMarker()
+        marker.position = position
+        marker.title = "Palacio de los Deportes"
+        marker.snippet = "CDMX"
+        marker.map = mapView
     }
     
     
@@ -107,6 +122,10 @@ class EventDetails: UIViewController,UICollectionViewDelegate, UICollectionViewD
     
     
     
+    
+}
+
+extension EventDetails: GMSMapViewDelegate{
     
 }
 

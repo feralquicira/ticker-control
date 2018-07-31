@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eDx-NG-8WG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RAp-Ge-oQj">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -2882,19 +2882,19 @@
             </objects>
             <point key="canvasLocation" x="3479" y="89"/>
         </scene>
-        <!--Event Details-->
+        <!--Delegate-->
         <scene sceneID="fx7-JD-axC">
             <objects>
                 <viewController id="NJW-Fi-SQU" customClass="EventDetails" customModule="Ticker_Fase1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NcZ-zn-wn6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BT6-dL-sTk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pza-ss-mes">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinópsis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVZ-Qs-Xww">
                                                 <rect key="frame" x="20" y="0.0" width="355" height="52"/>
@@ -2974,7 +2974,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ka9-GY-5OL">
-                                                <rect key="frame" x="20" y="544" width="134" height="30"/>
+                                                <rect key="frame" x="20" y="521" width="134" height="30"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="ccO-cX-iWx">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -3027,7 +3027,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 </variation>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artistas relacionados" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQK-42-nRE">
-                                                <rect key="frame" x="20" y="594" width="355" height="40"/>
+                                                <rect key="frame" x="20" y="571" width="355" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="nMt-rF-UBD"/>
                                                 </constraints>
@@ -3046,7 +3046,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWH-Cp-7U4">
-                                                <rect key="frame" x="20" y="634" width="335" height="1"/>
+                                                <rect key="frame" x="20" y="611" width="335" height="1"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="GaO-7i-VFS"/>
@@ -3063,7 +3063,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 </variation>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pqz-QW-91J">
-                                                <rect key="frame" x="20" y="658" width="355" height="140"/>
+                                                <rect key="frame" x="20" y="635" width="355" height="140"/>
                                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="140" id="P8n-vo-we6"/>
@@ -3201,7 +3201,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 </connections>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue/Ubicación" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXu-bE-yVn">
-                                                <rect key="frame" x="20" y="818" width="355" height="40"/>
+                                                <rect key="frame" x="20" y="795" width="355" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="lRC-Hs-7DY"/>
                                                 </constraints>
@@ -3220,7 +3220,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdV-Ty-NVM">
-                                                <rect key="frame" x="20" y="858" width="335" height="1"/>
+                                                <rect key="frame" x="20" y="835" width="335" height="1"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="yIP-TS-B5H"/>
@@ -3237,11 +3237,11 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 </variation>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palacio de los Deportes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXu-I9-w8A">
-                                                <rect key="frame" x="20" y="888" width="355" height="25"/>
+                                                <rect key="frame" x="20" y="865" width="355" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="yNY-bv-nUb"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="20"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
@@ -3256,7 +3256,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de foro o venue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB6-2S-vs6">
-                                                <rect key="frame" x="20" y="918" width="355" height="25"/>
+                                                <rect key="frame" x="20" y="895" width="355" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="JRM-aP-8jg"/>
                                                 </constraints>
@@ -3275,7 +3275,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poD-M2-vlR" customClass="CosmosView" customModule="Cosmos">
-                                                <rect key="frame" x="20" y="951" width="355" height="30"/>
+                                                <rect key="frame" x="20" y="928" width="355" height="30"/>
                                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="rzu-Ah-J8N"/>
@@ -3317,69 +3317,133 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marker" translatesAutoresizingMaskIntoConstraints="NO" id="dNX-pf-x4N">
-                                                <rect key="frame" x="20" y="1018" width="35" height="35"/>
+                                                <rect key="frame" x="20" y="995" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.17254901959999999" green="0.90980392160000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="35" id="MPM-tP-1hj"/>
-                                                    <constraint firstAttribute="width" constant="35" id="Slg-6y-GyF"/>
+                                                    <constraint firstAttribute="height" constant="30" id="MPM-tP-1hj"/>
+                                                    <constraint firstAttribute="width" constant="30" id="Slg-6y-GyF"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Av Viaducto Río de la Piedad y Río Churubusco S/N Granjas México 08400 Ciudad de México" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="K32-mc-ewW">
-                                                <rect key="frame" x="65" y="1018.6666666666665" width="290" height="34"/>
-                                                <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="17"/>
-                                                <color key="textColor" red="0.37254901959999998" green="0.36862745099999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <rect key="frame" x="60" y="994.33333333333337" width="295" height="32.000000000000114"/>
+                                                <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="16"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="UjZ-Te-f9D">
-                                                <rect key="frame" x="20" y="1073" width="35" height="35"/>
+                                                <rect key="frame" x="20" y="1045" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.17254901959999999" green="0.90980392160000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 - 00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFf-yF-94i">
-                                                <rect key="frame" x="75" y="1082.3333333333333" width="280" height="17"/>
-                                                <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="17"/>
-                                                <color key="textColor" red="0.37254901959999998" green="0.36862745099999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <rect key="frame" x="60" y="1052.6666666666667" width="295" height="16"/>
+                                                <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="16"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="internet" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-06-I3P">
-                                                <rect key="frame" x="20" y="1128" width="35" height="35"/>
+                                                <rect key="frame" x="20" y="1095" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.17254901959999999" green="0.90980392160000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ir a sitio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwa-Z5-X7E">
-                                                <rect key="frame" x="65" y="1137.3333333333333" width="290" height="17"/>
-                                                <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="17"/>
+                                                <rect key="frame" x="60" y="1102.6666666666667" width="295" height="16"/>
+                                                <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="megaphone" translatesAutoresizingMaskIntoConstraints="NO" id="Diw-j7-1aX">
-                                                <rect key="frame" x="20" y="1183" width="35" height="35"/>
+                                                <rect key="frame" x="20" y="1145" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.17254901959999999" green="0.90980392160000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(55) 47 43 11 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gia-kT-PTe">
-                                                <rect key="frame" x="65" y="1190.3333333333333" width="290" height="20.333333333333258"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="60" y="1152.6666666666667" width="295" height="16"/>
+                                                <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="16"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="scg-aL-rPo">
-                                                <rect key="frame" x="20" y="1238" width="35" height="35"/>
+                                                <rect key="frame" x="20" y="1195" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.17254901959999999" green="0.90980392160000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20,000 pax" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzW-AS-iD1">
-                                                <rect key="frame" x="65" y="1245.3333333333333" width="290" height="20.333333333333258"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="60" y="1202.6666666666667" width="295" height="16"/>
+                                                <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="16"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="H0U-ob-0PF">
-                                                <rect key="frame" x="20" y="1303" width="35" height="35"/>
+                                                <rect key="frame" x="20" y="1255" width="30" height="30"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="pDT-wH-Oyx">
-                                                <rect key="frame" x="70" y="1303" width="35" height="35"/>
+                                                <rect key="frame" x="65" y="1255" width="30" height="30"/>
                                             </imageView>
-                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jzg-3p-YdS">
-                                                <rect key="frame" x="54" y="1426" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </mapView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCo-L6-a73" userLabel="map Canvas" customClass="DesignableView" customModule="Ticker_Fase1" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="1325" width="335" height="160"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fum-1d-L7V" customClass="GMSMapView">
+                                                        <rect key="frame" x="-0.33333333333334281" y="0.0" width="335" height="160"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="NJW-Fi-SQU" id="iY8-Fg-aRw"/>
+                                                        </connections>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.42352941179999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="160" id="7Ro-BE-Neo"/>
+                                                    <constraint firstItem="Fum-1d-L7V" firstAttribute="width" secondItem="FCo-L6-a73" secondAttribute="width" id="Gfi-aQ-z8r"/>
+                                                    <constraint firstItem="Fum-1d-L7V" firstAttribute="centerY" secondItem="FCo-L6-a73" secondAttribute="centerY" id="YkU-dc-RfJ"/>
+                                                    <constraint firstItem="Fum-1d-L7V" firstAttribute="centerX" secondItem="FCo-L6-a73" secondAttribute="centerX" id="b0Y-m4-OHW"/>
+                                                    <constraint firstItem="Fum-1d-L7V" firstAttribute="height" secondItem="FCo-L6-a73" secondAttribute="height" id="pKz-3l-Oyi"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="0.67884684169999998" green="0.67884684169999998" blue="0.67884684169999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2W1-xb-uBx" customClass="DesignableButton" customModule="Ticker_Fase1" customModuleProvider="target">
+                                                <rect key="frame" x="19.666666666666657" y="1572" width="335" height="45"/>
+                                                <color key="backgroundColor" red="0.17254901959999999" green="0.90980392160000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="pAn-Rd-iDA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="17"/>
+                                                <state key="normal" title="AÑADIR A MIS CONCIERTOS">
+                                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="pAn-Rd-iDA"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="pAn-Rd-iDA"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -3388,10 +3452,12 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                             <constraint firstItem="aFf-yF-94i" firstAttribute="centerY" secondItem="UjZ-Te-f9D" secondAttribute="centerY" id="1l1-TY-PNV"/>
                                             <constraint firstItem="VB6-2S-vs6" firstAttribute="leading" secondItem="yXu-I9-w8A" secondAttribute="leading" id="2E6-9g-5yO"/>
                                             <constraint firstItem="pDT-wH-Oyx" firstAttribute="width" secondItem="H0U-ob-0PF" secondAttribute="width" id="35h-db-QVF"/>
+                                            <constraint firstItem="2W1-xb-uBx" firstAttribute="centerX" secondItem="Fum-1d-L7V" secondAttribute="centerX" id="35h-j6-ujO"/>
                                             <constraint firstItem="pDT-wH-Oyx" firstAttribute="centerY" secondItem="H0U-ob-0PF" secondAttribute="centerY" id="3uW-57-oRi"/>
                                             <constraint firstItem="aFf-yF-94i" firstAttribute="leading" secondItem="K32-mc-ewW" secondAttribute="leading" id="5YT-a5-AFG">
-                                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                                             </constraint>
+                                            <constraint firstItem="FCo-L6-a73" firstAttribute="leading" secondItem="Pza-ss-mes" secondAttribute="leading" constant="20" id="6be-zo-Nd1"/>
                                             <constraint firstItem="Vwa-Z5-X7E" firstAttribute="leading" secondItem="YFi-06-I3P" secondAttribute="trailing" constant="48" id="8PC-jn-VTG">
                                                 <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                                             </constraint>
@@ -3443,6 +3509,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                             <constraint firstItem="cWH-Cp-7U4" firstAttribute="leading" secondItem="Pza-ss-mes" secondAttribute="leading" constant="20" id="TkD-JA-pFe"/>
                                             <constraint firstAttribute="trailing" secondItem="Pqz-QW-91J" secondAttribute="trailing" id="UAN-Yx-ZRv"/>
                                             <constraint firstItem="YFi-06-I3P" firstAttribute="centerX" secondItem="UjZ-Te-f9D" secondAttribute="centerX" id="VKF-os-wFv"/>
+                                            <constraint firstAttribute="trailing" secondItem="FCo-L6-a73" secondAttribute="trailing" constant="20" id="VMg-Xn-vHd"/>
                                             <constraint firstItem="Vwa-Z5-X7E" firstAttribute="centerY" secondItem="YFi-06-I3P" secondAttribute="centerY" id="VQp-fK-G4t"/>
                                             <constraint firstItem="eho-gU-bpL" firstAttribute="top" secondItem="OVZ-Qs-Xww" secondAttribute="bottom" id="Wca-I2-zKZ"/>
                                             <constraint firstItem="poD-M2-vlR" firstAttribute="width" secondItem="VB6-2S-vs6" secondAttribute="width" id="XJb-xY-CBt"/>
@@ -3457,7 +3524,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                             <constraint firstItem="zdV-Ty-NVM" firstAttribute="top" secondItem="IXu-bE-yVn" secondAttribute="bottom" constant="8" id="b94-CL-eIV">
                                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                                             </constraint>
-                                            <constraint firstItem="ka9-GY-5OL" firstAttribute="top" secondItem="fpu-ue-Zpk" secondAttribute="bottom" constant="33" id="bhS-EB-hj7"/>
+                                            <constraint firstItem="ka9-GY-5OL" firstAttribute="top" secondItem="fpu-ue-Zpk" secondAttribute="bottom" constant="10" id="bhS-EB-hj7"/>
                                             <constraint firstItem="K32-mc-ewW" firstAttribute="centerY" secondItem="dNX-pf-x4N" secondAttribute="centerY" id="f4p-0N-R34">
                                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                                             </constraint>
@@ -3471,7 +3538,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                             </constraint>
                                             <constraint firstItem="H0U-ob-0PF" firstAttribute="width" secondItem="scg-aL-rPo" secondAttribute="width" id="jjW-6W-S2x"/>
                                             <constraint firstAttribute="height" constant="1300" id="lPS-f7-HN5">
-                                                <variation key="heightClass=regular-widthClass=compact" constant="2000"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="1800"/>
                                             </constraint>
                                             <constraint firstItem="UjZ-Te-f9D" firstAttribute="top" secondItem="dNX-pf-x4N" secondAttribute="bottom" constant="25" id="nhF-nU-HXT">
                                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
@@ -3481,14 +3548,17 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                             <constraint firstItem="H0U-ob-0PF" firstAttribute="top" secondItem="scg-aL-rPo" secondAttribute="bottom" constant="30" id="pGn-QF-roM"/>
                                             <constraint firstAttribute="trailing" secondItem="K32-mc-ewW" secondAttribute="trailing" constant="20" id="pkG-Ca-Rkf"/>
                                             <constraint firstItem="Pqz-QW-91J" firstAttribute="leading" secondItem="cWH-Cp-7U4" secondAttribute="leading" id="qi4-3q-7gj"/>
+                                            <constraint firstItem="FCo-L6-a73" firstAttribute="top" secondItem="pDT-wH-Oyx" secondAttribute="bottom" constant="40" id="scS-Ii-Dyt"/>
                                             <constraint firstItem="poD-M2-vlR" firstAttribute="top" secondItem="VB6-2S-vs6" secondAttribute="bottom" constant="8" id="srN-bf-K0j"/>
                                             <constraint firstItem="VB6-2S-vs6" firstAttribute="top" secondItem="yXu-I9-w8A" secondAttribute="bottom" constant="19" id="tDb-pd-ESr">
                                                 <variation key="heightClass=regular-widthClass=compact" constant="5"/>
                                             </constraint>
+                                            <constraint firstItem="2W1-xb-uBx" firstAttribute="top" secondItem="Fum-1d-L7V" secondAttribute="bottom" constant="87" id="tYm-WP-UJD"/>
                                             <constraint firstAttribute="trailing" secondItem="FzW-AS-iD1" secondAttribute="trailing" constant="20" id="uCX-VQ-Ubx"/>
                                             <constraint firstItem="FzW-AS-iD1" firstAttribute="centerY" secondItem="scg-aL-rPo" secondAttribute="centerY" id="v18-X1-oD7"/>
                                             <constraint firstItem="fpu-ue-Zpk" firstAttribute="width" secondItem="miU-na-0hE" secondAttribute="width" id="vPD-tk-TUC"/>
                                             <constraint firstAttribute="trailing" secondItem="aFf-yF-94i" secondAttribute="trailing" constant="20" id="vaW-oJ-Kuk"/>
+                                            <constraint firstItem="2W1-xb-uBx" firstAttribute="width" secondItem="Fum-1d-L7V" secondAttribute="width" id="vas-gI-V5h"/>
                                             <constraint firstItem="scg-aL-rPo" firstAttribute="height" secondItem="Diw-j7-1aX" secondAttribute="height" id="vle-Ek-M5w"/>
                                             <constraint firstAttribute="trailing" secondItem="gia-kT-PTe" secondAttribute="trailing" constant="20" id="wTa-yf-VB3">
                                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
@@ -3526,7 +3596,8 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 <exclude reference="FzW-AS-iD1"/>
                                                 <exclude reference="H0U-ob-0PF"/>
                                                 <exclude reference="pDT-wH-Oyx"/>
-                                                <exclude reference="Jzg-3p-YdS"/>
+                                                <exclude reference="FCo-L6-a73"/>
+                                                <exclude reference="2W1-xb-uBx"/>
                                             </mask>
                                             <mask key="constraints">
                                                 <exclude reference="lPS-f7-HN5"/>
@@ -3601,6 +3672,9 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 <exclude reference="3uW-57-oRi"/>
                                                 <exclude reference="DcK-E7-PUF"/>
                                                 <exclude reference="ZyP-me-dEl"/>
+                                                <exclude reference="35h-j6-ujO"/>
+                                                <exclude reference="tYm-WP-UJD"/>
+                                                <exclude reference="vas-gI-V5h"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
@@ -3628,7 +3702,8 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 <include reference="FzW-AS-iD1"/>
                                                 <include reference="H0U-ob-0PF"/>
                                                 <include reference="pDT-wH-Oyx"/>
-                                                <include reference="Jzg-3p-YdS"/>
+                                                <include reference="FCo-L6-a73"/>
+                                                <include reference="2W1-xb-uBx"/>
                                             </mask>
                                             <mask key="constraints">
                                                 <include reference="lPS-f7-HN5"/>
@@ -3703,6 +3778,9 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 <include reference="3uW-57-oRi"/>
                                                 <include reference="DcK-E7-PUF"/>
                                                 <include reference="ZyP-me-dEl"/>
+                                                <include reference="35h-j6-ujO"/>
+                                                <include reference="tYm-WP-UJD"/>
+                                                <include reference="vas-gI-V5h"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -3771,10 +3849,11 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                             </mask>
                         </variation>
                     </view>
-                    <size key="freeformSize" width="375" height="2000"/>
+                    <size key="freeformSize" width="375" height="1800"/>
                     <connections>
                         <outlet property="cosmosView" destination="poD-M2-vlR" id="mry-xN-Hiy"/>
                         <outlet property="headphonesimage" destination="EIo-LG-8Wq" id="Sjq-JY-bIn"/>
+                        <outlet property="mapView" destination="Fum-1d-L7V" id="BPi-9h-lIK"/>
                         <outlet property="scrollView" destination="BT6-dL-sTk" id="u2h-gk-Dzh"/>
                         <outlet property="sinopsisTopConstrain" destination="Nzs-bJ-QBJ" id="GzA-4j-FUS"/>
                     </connections>

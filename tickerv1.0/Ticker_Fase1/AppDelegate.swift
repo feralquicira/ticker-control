@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 import FacebookCore
 import IQKeyboardManagerSwift
+import GoogleMaps
+import GooglePlaces
 
 @available(iOS 10.0, *)
 @UIApplicationMain
@@ -26,6 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.previousNextDisplayMode = .alwaysHide
         IQKeyboardManager.shared.enableAutoToolbar = false
         IQKeyboardManager.shared.shouldShowToolbarPlaceholder = false
+        
+        GMSServices.provideAPIKey("AIzaSyALSTfrEjAHmO7pgMLBFnBU6k_LSqecQ0Q")
+        GMSPlacesClient.provideAPIKey("AIzaSyALSTfrEjAHmO7pgMLBFnBU6k_LSqecQ0Q")
+        
         
         
         return true
