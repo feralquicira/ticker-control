@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cosmos
 
 protocol changeConstraint {
     func moveUp(up:Bool)
@@ -15,6 +16,7 @@ protocol changeConstraint {
 class EventDetails: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate {
     
     
+    @IBOutlet weak var cosmosView: CosmosView!
     @IBOutlet weak var sinopsisTopConstrain: NSLayoutConstraint!
     @IBOutlet weak var headphonesimage: UIImageView!
     
@@ -100,7 +102,10 @@ class EventDetails: UIViewController,UICollectionViewDelegate, UICollectionViewD
         image_view.tintColor = UIColor().uicolorFromHexx(rgbValue: hexColor, alpha: 1.0)
         image_view.backgroundColor = .clear
         
+        
     }
+    
+    
     
     
 }

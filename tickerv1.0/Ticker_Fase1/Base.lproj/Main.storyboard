@@ -3274,6 +3274,49 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                     </mask>
                                                 </variation>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poD-M2-vlR" customClass="CosmosView" customModule="Cosmos">
+                                                <rect key="frame" x="20" y="951" width="355" height="30"/>
+                                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="rzu-Ah-J8N"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="calif."/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                        <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                                        <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                                        <color key="value" red="0.37254901959999998" green="0.36862745099999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                                        <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyBorderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="filledBorderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -3290,6 +3333,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                             <constraint firstAttribute="trailing" secondItem="eho-gU-bpL" secondAttribute="trailing" constant="20" id="G8T-cv-ocx"/>
                                             <constraint firstItem="yXu-I9-w8A" firstAttribute="leading" secondItem="zdV-Ty-NVM" secondAttribute="leading" id="GHG-Iz-P8b"/>
                                             <constraint firstItem="fpu-ue-Zpk" firstAttribute="top" secondItem="miU-na-0hE" secondAttribute="bottom" constant="22" id="I4T-LS-y3p"/>
+                                            <constraint firstItem="poD-M2-vlR" firstAttribute="leading" secondItem="VB6-2S-vs6" secondAttribute="leading" id="IUf-ie-bTk"/>
                                             <constraint firstAttribute="trailing" secondItem="VB6-2S-vs6" secondAttribute="trailing" id="KRq-hd-0sH"/>
                                             <constraint firstAttribute="trailing" secondItem="MQK-42-nRE" secondAttribute="trailing" id="LDv-dz-Pog"/>
                                             <constraint firstItem="fpu-ue-Zpk" firstAttribute="leading" secondItem="miU-na-0hE" secondAttribute="leading" id="Mrh-pV-SSh"/>
@@ -3306,6 +3350,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                             <constraint firstItem="cWH-Cp-7U4" firstAttribute="leading" secondItem="Pza-ss-mes" secondAttribute="leading" constant="20" id="TkD-JA-pFe"/>
                                             <constraint firstAttribute="trailing" secondItem="Pqz-QW-91J" secondAttribute="trailing" id="UAN-Yx-ZRv"/>
                                             <constraint firstItem="eho-gU-bpL" firstAttribute="top" secondItem="OVZ-Qs-Xww" secondAttribute="bottom" id="Wca-I2-zKZ"/>
+                                            <constraint firstItem="poD-M2-vlR" firstAttribute="width" secondItem="VB6-2S-vs6" secondAttribute="width" id="XJb-xY-CBt"/>
                                             <constraint firstAttribute="trailing" secondItem="cWH-Cp-7U4" secondAttribute="trailing" constant="20" id="ZMe-4s-s5W"/>
                                             <constraint firstItem="MQK-42-nRE" firstAttribute="top" secondItem="ccO-cX-iWx" secondAttribute="bottom" constant="50" id="Zmt-Mq-nup">
                                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
@@ -3322,6 +3367,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                             </constraint>
                                             <constraint firstItem="OVZ-Qs-Xww" firstAttribute="leading" secondItem="Pza-ss-mes" secondAttribute="leading" constant="20" id="oFP-df-1no"/>
                                             <constraint firstItem="Pqz-QW-91J" firstAttribute="leading" secondItem="cWH-Cp-7U4" secondAttribute="leading" id="qi4-3q-7gj"/>
+                                            <constraint firstItem="poD-M2-vlR" firstAttribute="top" secondItem="VB6-2S-vs6" secondAttribute="bottom" constant="8" id="srN-bf-K0j"/>
                                             <constraint firstItem="VB6-2S-vs6" firstAttribute="top" secondItem="yXu-I9-w8A" secondAttribute="bottom" constant="19" id="tDb-pd-ESr">
                                                 <variation key="heightClass=regular-widthClass=compact" constant="5"/>
                                             </constraint>
@@ -3349,9 +3395,15 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 <exclude reference="Dhe-LV-AJm"/>
                                                 <exclude reference="G8T-cv-ocx"/>
                                                 <exclude reference="Wca-I2-zKZ"/>
+                                                <exclude reference="SB8-3l-ewJ"/>
+                                                <exclude reference="SLX-03-9IE"/>
+                                                <exclude reference="hX2-F4-7zu"/>
                                                 <exclude reference="I4T-LS-y3p"/>
                                                 <exclude reference="Mrh-pV-SSh"/>
                                                 <exclude reference="vPD-tk-TUC"/>
+                                                <exclude reference="EKj-7a-pUJ"/>
+                                                <exclude reference="bhS-EB-hj7"/>
+                                                <exclude reference="zx8-K4-dv1"/>
                                                 <exclude reference="LDv-dz-Pog"/>
                                                 <exclude reference="Zmt-Mq-nup"/>
                                                 <exclude reference="i61-4z-Zyp"/>
@@ -3373,12 +3425,6 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 <exclude reference="2E6-9g-5yO"/>
                                                 <exclude reference="KRq-hd-0sH"/>
                                                 <exclude reference="tDb-pd-ESr"/>
-                                                <exclude reference="SB8-3l-ewJ"/>
-                                                <exclude reference="SLX-03-9IE"/>
-                                                <exclude reference="hX2-F4-7zu"/>
-                                                <exclude reference="EKj-7a-pUJ"/>
-                                                <exclude reference="bhS-EB-hj7"/>
-                                                <exclude reference="zx8-K4-dv1"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
@@ -3401,9 +3447,15 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 <include reference="Dhe-LV-AJm"/>
                                                 <include reference="G8T-cv-ocx"/>
                                                 <include reference="Wca-I2-zKZ"/>
+                                                <include reference="SB8-3l-ewJ"/>
+                                                <include reference="SLX-03-9IE"/>
+                                                <include reference="hX2-F4-7zu"/>
                                                 <include reference="I4T-LS-y3p"/>
                                                 <include reference="Mrh-pV-SSh"/>
                                                 <include reference="vPD-tk-TUC"/>
+                                                <include reference="EKj-7a-pUJ"/>
+                                                <include reference="bhS-EB-hj7"/>
+                                                <include reference="zx8-K4-dv1"/>
                                                 <include reference="LDv-dz-Pog"/>
                                                 <include reference="Zmt-Mq-nup"/>
                                                 <include reference="i61-4z-Zyp"/>
@@ -3425,12 +3477,6 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                                 <include reference="2E6-9g-5yO"/>
                                                 <include reference="KRq-hd-0sH"/>
                                                 <include reference="tDb-pd-ESr"/>
-                                                <include reference="SB8-3l-ewJ"/>
-                                                <include reference="SLX-03-9IE"/>
-                                                <include reference="hX2-F4-7zu"/>
-                                                <include reference="EKj-7a-pUJ"/>
-                                                <include reference="bhS-EB-hj7"/>
-                                                <include reference="zx8-K4-dv1"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -3501,6 +3547,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                     </view>
                     <size key="freeformSize" width="375" height="2000"/>
                     <connections>
+                        <outlet property="cosmosView" destination="poD-M2-vlR" id="mry-xN-Hiy"/>
                         <outlet property="headphonesimage" destination="EIo-LG-8Wq" id="Sjq-JY-bIn"/>
                         <outlet property="scrollView" destination="BT6-dL-sTk" id="u2h-gk-Dzh"/>
                         <outlet property="sinopsisTopConstrain" destination="Nzs-bJ-QBJ" id="GzA-4j-FUS"/>
@@ -3508,7 +3555,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooX-A3-kWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5460" y="1242"/>
+            <point key="canvasLocation" x="5460" y="1241.3793103448277"/>
         </scene>
     </scenes>
     <resources>
