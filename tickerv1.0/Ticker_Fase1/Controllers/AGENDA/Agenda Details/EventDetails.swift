@@ -22,6 +22,8 @@ class EventDetails: UIViewController,UICollectionViewDelegate, UICollectionViewD
     @IBOutlet weak var sinopsisTopConstrain: NSLayoutConstraint!
     @IBOutlet weak var headphonesimage: UIImageView!
     @IBOutlet weak var mapView: GMSMapView!
+    let marker = GMSMarker()
+    let fakeMarker = GMSMarker()
     
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -38,7 +40,15 @@ class EventDetails: UIViewController,UICollectionViewDelegate, UICollectionViewD
         scrollView.delegate = self
         setupIcons(image_name: "headphones", image_view: headphonesimage, hexColor: 0x2CE8CC)
 
-        // Setup map view
+        // Setup map view and target
+        showMarker(position: setupMapView(mapView: mapView).target)
+        fakeMarker.opacity = 0
+        
+    }
+    
+    // MARK: - Google Maps
+    
+    func setupMapView(mapView: GMSMapView)-> GMSCameraPosition{
         let camera = GMSCameraPosition.camera(withLatitude: 37.36, longitude: -122.0, zoom: 14.0)
         mapView.camera = camera
         mapView.settings.scrollGestures = true
@@ -46,13 +56,11 @@ class EventDetails: UIViewController,UICollectionViewDelegate, UICollectionViewD
         mapView.settings.tiltGestures = true
         mapView.settings.rotateGestures = false
         
-        showMarker(position: camera.target)
-        
+        return camera
     }
     
-    // MARK: - Google Maps
     func showMarker(position: CLLocationCoordinate2D){
-        let marker = GMSMarker()
+        
         marker.position = position
         marker.title = "Palacio de los Deportes"
         marker.snippet = "CDMX"
@@ -126,6 +134,14 @@ class EventDetails: UIViewController,UICollectionViewDelegate, UICollectionViewD
 }
 
 extension EventDetails: GMSMapViewDelegate{
+    
+    func mapView(_ mapView: GMSMapView, didTapPOIWithPlaceID placeID: String, name: String, location: CLLocationCoordinate2D) {
+        fakeMarker.snippet = placeID
+        fakeMarker.position = location
+        fakeMarker.title = name
+        fakeMarker.map = mapView
+        
+    }
     
 }
 

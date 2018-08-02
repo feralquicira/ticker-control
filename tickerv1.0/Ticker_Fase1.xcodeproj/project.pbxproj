@@ -24,7 +24,9 @@
 		ED642FFD20EABC410082D129 /* FuturaPTBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED642FFB20EABC410082D129 /* FuturaPTBook.otf */; };
 		ED642FFF20EABC5A0082D129 /* ProximaNovaSoft-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED642FFE20EABC5A0082D129 /* ProximaNovaSoft-Regular.otf */; };
 		ED6CC5BC20F822FA0033F53A /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6CC5BB20F822FA0033F53A /* AppStyle.swift */; };
+		ED71665C211272DC000EF962 /* EventTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED71665B211272DC000EF962 /* EventTicketsViewController.swift */; };
 		ED7198B8210F88E10020447F /* RelatedArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7198B7210F88E10020447F /* RelatedArtistCell.swift */; };
+		ED7DD19921111E1900E8C19F /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7DD19821111E1900E8C19F /* MapTasks.swift */; };
 		ED80BC3820EFFE2F006D9EF0 /* GenreTagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED80BC3720EFFE2F006D9EF0 /* GenreTagsViewController.swift */; };
 		ED80BC3F20F00576006D9EF0 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED80BC3E20F00576006D9EF0 /* TagCollectionViewCell.swift */; };
 		ED9404EC20E41646006E6F08 /* CreateAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9404EB20E41646006E6F08 /* CreateAccountController.swift */; };
@@ -83,7 +85,9 @@
 		ED642FFB20EABC410082D129 /* FuturaPTBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTBook.otf; sourceTree = "<group>"; };
 		ED642FFE20EABC5A0082D129 /* ProximaNovaSoft-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Regular.otf"; sourceTree = "<group>"; };
 		ED6CC5BB20F822FA0033F53A /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		ED71665B211272DC000EF962 /* EventTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTicketsViewController.swift; sourceTree = "<group>"; };
 		ED7198B7210F88E10020447F /* RelatedArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedArtistCell.swift; sourceTree = "<group>"; };
+		ED7DD19821111E1900E8C19F /* MapTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
 		ED80BC3720EFFE2F006D9EF0 /* GenreTagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreTagsViewController.swift; sourceTree = "<group>"; };
 		ED80BC3E20F00576006D9EF0 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED9404EB20E41646006E6F08 /* CreateAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountController.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 			children = (
 				EDB1FAD4210FBCBA0055A54A /* MasterDetails.swift */,
 				EDB1FAD6210FBD3D0055A54A /* EventDetails.swift */,
+				ED71665B211272DC000EF962 /* EventTicketsViewController.swift */,
 			);
 			path = "Agenda Details";
 			sourceTree = "<group>";
@@ -202,6 +207,14 @@
 				ED642FF820EAB0310082D129 /* proxima_nova_soft_regular */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		ED7DD19721111DD500E8C19F /* Google Maps  */ = {
+			isa = PBXGroup;
+			children = (
+				ED7DD19821111E1900E8C19F /* MapTasks.swift */,
+			);
+			path = "Google Maps ";
 			sourceTree = "<group>";
 		};
 		ED80BC3D20F0054B006D9EF0 /* Cells */ = {
@@ -272,6 +285,7 @@
 		EDD9E44120D965CC009FA516 /* Ticker_Fase1 */ = {
 			isa = PBXGroup;
 			children = (
+				ED7DD19721111DD500E8C19F /* Google Maps  */,
 				ED02492120F3E765001E9528 /* Classes */,
 				ED80BC3D20F0054B006D9EF0 /* Cells */,
 				ED228FC220EC22C700BE032D /* Extensions */,
@@ -532,8 +546,10 @@
 				ED228FC120EBFB2B00BE032D /* CreateAccountSecondViewController.swift in Sources */,
 				ED49766320FEBCA400AB0662 /* Event.swift in Sources */,
 				ED7198B8210F88E10020447F /* RelatedArtistCell.swift in Sources */,
+				ED71665C211272DC000EF962 /* EventTicketsViewController.swift in Sources */,
 				ED6CC5BC20F822FA0033F53A /* AppStyle.swift in Sources */,
 				EDD9E44520D965CC009FA516 /* ViewController.swift in Sources */,
+				ED7DD19921111E1900E8C19F /* MapTasks.swift in Sources */,
 				ED9404EC20E41646006E6F08 /* CreateAccountController.swift in Sources */,
 				ED05CB67210147B50097C2B2 /* CalendarCustomCell.swift in Sources */,
 				EDD9E44320D965CC009FA516 /* AppDelegate.swift in Sources */,

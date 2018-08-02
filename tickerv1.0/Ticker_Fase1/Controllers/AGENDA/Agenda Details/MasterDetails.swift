@@ -49,6 +49,9 @@ class MasterDetails:UIViewController, changeConstraint {
     @IBOutlet weak var eventDate_label: UILabel!
     @IBOutlet weak var eventRangePrice_label: UILabel!
     
+    @IBOutlet weak var detailsView: UIView!
+    @IBOutlet weak var ticketsView: UIView!
+    
     
     
     @IBOutlet weak var imageCanvas: DesignableView!
@@ -83,6 +86,19 @@ class MasterDetails:UIViewController, changeConstraint {
         saveOriginalXPosition(images: arrayOfIcons)
         
     }
+    
+    @IBAction func switchViews(_ sender: RoundSegmentedControl) {
+        
+        switch sender.selectedSegmentIndex{
+        case 0:
+            detailsView.isHidden = false
+            ticketsView.isHidden = true
+        default:
+            ticketsView.isHidden = false
+            detailsView.isHidden = true
+        }
+    }
+    
     
     
     
